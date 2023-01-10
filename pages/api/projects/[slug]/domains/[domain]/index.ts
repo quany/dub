@@ -27,7 +27,7 @@ export default withProjectAuth(
       const newDomain = req.body;
 
       const validDomain =
-        validDomainRegex.test(newDomain) && !newDomain.endsWith(".dub.sh");
+        validDomainRegex.test(newDomain) && !newDomain.endsWith(".l0l.ink");
 
       if (!validDomain) {
         return res.status(422).json({

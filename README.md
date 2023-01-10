@@ -1,4 +1,4 @@
-<a href="https://dub.sh">
+<a href="https://l0l.ink">
   <img alt="Dub – an open-source link management tool for modern marketing teams to create, share, and track short links." src="https://user-images.githubusercontent.com/28986134/200727801-6355c62e-60b5-45d7-a83d-44b11545e471.png">
   <h1 align="center">Dub</h1>
 </a>
@@ -62,7 +62,7 @@ Add a custom OG image in front of your target URL. Bots like Twitter/Facebook wi
 
 You can deploy your own hosted version of Dub for greater privacy & control. Just click the link below to deploy a ready-to-go version of Dub to Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://dub.sh/deploy)
+[![Deploy with Vercel](https://vercel.com/button)](https://l0l.ink/deploy)
 
 ## Tech Stack
 

@@ -4,6 +4,7 @@ import { Redis } from "@upstash/redis";
 import { LOCALHOST_GEO_DATA } from "@/lib/constants";
 import { nanoid } from "@/lib/utils";
 
+
 // Initiate Redis instance
 export const redis = new Redis({
   url: process.env.UPSTASH_REDIS_REST_URL || "",
@@ -16,14 +17,14 @@ export const ratelimit = new Ratelimit({
   limiter: Ratelimit.slidingWindow(10, "10 s"),
 });
 
-// only for dub.sh public demo
+// only for l0l.ink public demo
 export async function setRandomKey(
   url: string,
 ): Promise<{ response: string; key: string }> {
   /* recursively set link till successful */
   const key = nanoid();
   const response = await redis.set(
-    `dub.sh:${key}`,
+    `l0l.ink:${key}`,
     {
       url,
     },

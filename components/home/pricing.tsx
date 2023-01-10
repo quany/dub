@@ -15,76 +15,76 @@ import { nFormatter } from "@/lib/utils";
 
 const pricingItems = [
   {
-    plan: "Free",
-    tagline: "For startups & side projects",
-    clicksLimit: "Up to 1K link clicks/mo",
+    plan: "免费",
+    tagline: "对于初创公司和副项目s",
+    clicksLimit: "高达 1K 链接点击/月",
     features: [
       {
-        text: "Free custom domains",
+        text: "免费自定义域",
         footnote:
-          "Just bring any domain you own and turn it into a custom domain link shortener for free.",
+          "只需带上您拥有的任何域名，即可免费将其变成自定义域名链接缩短器。",
       },
-      { text: "Unlimited branded links" },
-      { text: "5 projects" },
-      { text: "Password-protected links" },
-      { text: "Custom Social Previews", footnote: <OGImageProxy /> },
+      { text: "无限的品牌链接" },
+      { text: "5 个项目" },
+      { text: "受密码保护的链接" },
+      { text: "自定义社交预览", footnote: <OGImageProxy /> },
       {
-        text: "Root domain redirect",
+        text: "根域重定向",
         footnote:
-          "Redirect vistors that land on the root of your domain (e.g. yourdomain.com) to a page of your choice.",
+          "将登陆您域根目录（例如 yourdomain.com）的访问者重定向到您选择的页面。",
         negative: true,
       },
       { text: "SSO/SAML", negative: true },
     ],
-    cta: "Start for free",
-    ctaLink: "https://app.dub.sh/register",
+    cta: "开始免费",
+    ctaLink: "https://app.l0l.ink/register",
   },
   {
-    plan: "Pro",
-    tagline: "For larger teams with increased usage",
+    plan: "专业",
+    tagline: "对于使用量增加的大型团队",
     features: [
       {
-        text: "Free custom domains",
+        text: "免费自定义域",
         footnote:
-          "Just bring any domain you own and turn it into a custom domain link shortener for free.",
+          "只需带上您拥有的任何域名，即可免费将其变成自定义域名链接缩短器。",
       },
-      { text: "Unlimited branded links" },
-      { text: "Unlimited projects" },
-      { text: "Password-protected links" },
-      { text: "Custom Social Previews", footnote: <OGImageProxy /> },
+      { text: "无限的品牌链接" },
+      { text: "无限的项目" },
+      { text: "受密码保护的链接" },
+      { text: "自定义社交预览", footnote: <OGImageProxy /> },
       {
-        text: "Root domain redirect",
+        text: "根域重定向",
         footnote:
-          "Redirect vistors that land on the root of your domain (e.g. yourdomain.com) to a page of your choice.",
+          "将登陆您域根目录（例如 yourdomain.com）的访问者重定向到您选择的页面。",
       },
       { text: "SSO/SAML", negative: true },
     ],
-    cta: "Get started",
-    ctaLink: "https://app.dub.sh/register",
+    cta: "开始吧",
+    ctaLink: "https://app.l0l.ink/register",
   },
   {
-    plan: "Enterprise",
-    tagline: "For businesses with custom needs",
-    clicksLimit: "Unlimited link clicks",
+    plan: "企业级",
+    tagline: "对于有定制需求的企业",
+    clicksLimit: "无限次链接点击",
     features: [
       {
-        text: "Free custom domains",
+        text: "免费自定义域",
         footnote:
-          "Just bring any domain you own and turn it into a custom domain link shortener for free.",
+          "只需带上您拥有的任何域名，即可免费将其变成自定义域名链接缩短器。",
       },
-      { text: "Unlimited branded links" },
-      { text: "Unlimited projects" },
-      { text: "Password-protected links" },
-      { text: "Custom Social Previews", footnote: <OGImageProxy /> },
+      { text: "无限的品牌链接" },
+      { text: "无限的项目" },
+      { text: "受密码保护的链接" },
+      { text: "自定义社交预览", footnote: <OGImageProxy /> },
       {
-        text: "Root domain redirect",
+        text: "根域重定向",
         footnote:
-          "Redirect vistors that land on the root of your domain (e.g. yourdomain.com) to a page of your choice.",
+          "将登陆您域根目录（例如 yourdomain.com）的访问者重定向到您选择的页面。",
       },
       { text: "SSO/SAML" },
     ],
-    cta: "Contact us",
-    ctaLink: "mailto:steven@dub.sh?subject=Interested%20in%20Dub%20Enterprise",
+    cta: "联系我们",
+    ctaLink: "mailto:steven@l0l.ink?subject=Interested%20in%20Dub%20Enterprise",
   },
 ];
 
@@ -100,19 +100,19 @@ const Pricing = () => {
     <MaxWidthWrapper className="my-20 text-center">
       <div id="pricing" className="mx-auto my-10 sm:max-w-lg">
         <h2 className="font-display text-4xl font-extrabold text-black sm:text-5xl">
-          Simple,{" "}
+        简单的,{" "}
           <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-            usage-based
+          基于使用的
           </span>{" "}
-          pricing
+          价钱
         </h2>
         <p className="mt-5 text-gray-600 sm:text-lg">
-          Start for free, no credit card required. Upgrade anytime.
+        免费开始，无需信用卡。 随时升级。
         </p>
       </div>
 
       <div className="relative mx-auto mb-14 flex max-w-fit items-center space-x-2">
-        <p className="text-gray-600">Billed Monthly</p>
+        <p className="text-gray-600">每月结算</p>
         <Confetti
           active={period === "yearly"}
           config={{ elementCount: 200, spread: 90 }}
@@ -124,9 +124,9 @@ const Pricing = () => {
           thumbTranslate="translate-x-6"
           checked={false}
         />
-        <p className="text-gray-600">Billed Annually</p>
+        <p className="text-gray-600">按年计费</p>
         <span className="absolute -top-8 -right-12 rounded-full bg-purple-200 px-3 py-1 text-sm text-purple-700 sm:-right-[9.5rem] sm:-top-2">
-          🎁 2 months FREE
+          🎁 2 个月免费
         </span>
       </div>
 
@@ -143,7 +143,7 @@ const Pricing = () => {
             >
               {plan === "Pro" && (
                 <div className="absolute -top-5 left-0 right-0 mx-auto w-32 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 px-3 py-2 text-sm font-medium text-white">
-                  Popular
+                  受欢迎的
                 </div>
               )}
               <div className="p-5">
@@ -153,7 +153,7 @@ const Pricing = () => {
                 <p className="text-gray-500">{tagline}</p>
                 {plan === "Enterprise" ? (
                   <p className="my-5 font-display text-6xl font-semibold">
-                    Custom
+                    自定义
                   </p>
                 ) : (
                   <div className="my-5 flex justify-center">

@@ -377,7 +377,7 @@ function AddEditLinkModal({
                 </div>
                 <div className="relative mt-1 flex rounded-md shadow-sm">
                   <span className="inline-flex items-center whitespace-nowrap rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-5 text-sm text-gray-500">
-                    {domain || "dub.sh"}
+                    {domain || "l0l.ink"}
                   </span>
                   {lockKey ? (
                     <div className="block w-full cursor-not-allowed select-none rounded-r-md border border-gray-300 bg-gray-100 px-3 py-2 text-sm text-gray-500">

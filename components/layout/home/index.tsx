@@ -44,18 +44,18 @@ export default function HomeLayout({
               {!session && status !== "loading" ? (
                 <motion.a
                   {...FADE_IN_ANIMATION_SETTINGS}
-                  href="https://app.dub.sh/login"
+                  href="https://quany-bookish-space-zebra-4xjqvq45x3qr6p-3000.preview.app.github.dev/login"
                   className="rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
                 >
-                  Sign in
+                  登录
                 </motion.a>
               ) : (
                 <motion.a
                   {...FADE_IN_ANIMATION_SETTINGS}
-                  href="https://app.dub.sh"
+                  href="https://quany-bookish-space-zebra-4xjqvq45x3qr6p-3000.preview.app.github.dev/"
                   className="rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
                 >
-                  Dashboard
+                  控制面板
                 </motion.a>
               )}
             </AnimatePresence>

@@ -55,9 +55,11 @@ export const FADE_IN_ANIMATION_SETTINGS = {
 
 export const HOME_HOSTNAMES = new Set([
   // comment for better diffs
-  "dub.sh",
-  "preview.dub.sh",
+  "l0l.ink",
+  "localhost",
+  "preview.l0l.ink",
   "localhost:3000",
+  "quany-bookish-space-zebra-4xjqvq45x3qr6p-3000.preview.app.github.dev"
 ]);
 
 export const RESERVED_KEYS = new Set([
@@ -84,16 +86,16 @@ export const RESERVED_KEYS = new Set([
   "demo",
 ]);
 export const DEFAULT_REDIRECTS = {
-  home: "https://dub.sh",
-  signin: "https://app.dub.sh/login",
-  login: "https://app.dub.sh/login",
-  register: "https://app.dub.sh/register",
-  signup: "https://app.dub.sh/register",
-  app: "https://app.dub.sh",
-  dashboard: "https://app.dub.sh",
-  links: "https://app.dub.sh/links",
-  settings: "https://app.dub.sh/settings",
-  welcome: "https://app.dub.sh/welcome",
+  home: "https://l0l.ink",
+  signin: "https://app.l0l.ink/login",
+  login: "https://app.l0l.ink/login",
+  register: "https://app.l0l.ink/register",
+  signup: "https://app.l0l.ink/register",
+  app: "https://app.l0l.ink",
+  dashboard: "https://app.l0l.ink",
+  links: "https://app.l0l.ink/links",
+  settings: "https://app.l0l.ink/settings",
+  welcome: "https://app.l0l.ink/welcome",
   slack: "https://dub.slack.com",
   discord: "https://twitter.com/dubdotsh", // placeholder for now
 };
@@ -120,7 +122,7 @@ export const SPECIAL_APEX_DOMAINS = {
 export const DEFAULT_LINK_PROPS = {
   key: "github",
   url: "https://github.com/steven-tey/dub",
-  domain: "dub.sh",
+  domain: "l0l.ink",
   archived: false,
   expiresAt: null,
   password: null,

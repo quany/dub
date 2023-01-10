@@ -134,16 +134,16 @@ const GlobeAnimation = ({ markers }: { markers: MarkerProps[] }) => {
             </button>
             <Drag className="mx-auto mb-2 h-12 w-12 text-gray-700 sm:mb-4" />
             <p className="text-center text-sm text-gray-700 sm:text-base">
-              This map shows the locations of the last 50 clicks on{" "}
+              此地图显示最近 50 次点击的位置{" "}
               <a
                 className="font-semibold text-blue-800"
-                href="https://dub.sh/github"
+                href="https://l0l.ink/github"
                 target="_blank"
                 rel="noreferrer"
               >
-                dub.sh/github
+                l0l.ink/github
               </a>{" "}
-              in real time.
+              实时的.
             </p>
             <Link
               href={{ pathname: "/", query: { key: "github" } }}
@@ -152,7 +152,7 @@ const GlobeAnimation = ({ markers }: { markers: MarkerProps[] }) => {
               scroll={false}
               className="mx-auto mt-2 block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white hover:bg-white hover:text-black sm:mt-4"
             >
-              View all stats
+              查看所有统计数据
             </Link>
           </motion.div>
         )}

@@ -18,10 +18,10 @@ import { useAddEditLinkModal } from "../app/modals/add-edit-link-modal";
 const featureList = [
   {
     key: "analytics",
-    title: "Analytics that matter",
+    title: "重要的分析",
     icon: <Chart className="h-5 w-5 text-gray-600" />,
     description:
-      "Dub provides powerful analytics for your links, including geolocation, device, browser, and referrer information.",
+      "Dub 为您的链接提供强大的分析，包括地理位置、设备、浏览器和引用信息。",
     cta: (
       <Link
         href={{ pathname: "/", query: { key: "github" } }}
@@ -30,7 +30,7 @@ const featureList = [
         scroll={false}
         className="block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
       >
-        View demo
+        查看演示
       </Link>
     ),
     demo: "https://d2vwwcvoksz7ty.cloudfront.net/analytics.mp4",
@@ -38,63 +38,63 @@ const featureList = [
   },
   {
     key: "domains",
-    title: "Use your own domain",
+    title: "使用您自己的域名",
     icon: <Airplay className="h-5 w-5 text-gray-600" />,
     description:
-      "Dub offers free custom domains on all plans - start personalizing your links today.",
+      "Dub 为所有计划提供免费的自定义域 - 立即开始个性化您的链接。",
     cta: (
       <a
-        href="https://app.dub.sh"
+        href="https://app.l0l.ink"
         target="_blank"
         rel="noreferrer"
         className="block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
       >
-        Create your project
+        创建项目
       </a>
     ),
     demo: "https://d2vwwcvoksz7ty.cloudfront.net/custom-domain.mp4",
   },
   {
     key: "link",
-    title: "Powerful link builder",
+    title: "强大的链接生成器",
     icon: <LinkIcon className="h-5 w-5 text-gray-600" />,
     description:
-      "Build your links with UTM parameters, password protection, expiration dates, iOS/Android targeting, etc.",
-    cta: "View demo", //custom cta
+      "使用 UTM 参数、密码保护、到期日期、iOS/Android 目标等构建您的链接。",
+    cta: "查看演示", //custom cta
     demo: "https://d2vwwcvoksz7ty.cloudfront.net/link.mp4",
   },
   {
     key: "social",
-    title: "Custom social media cards",
+    title: "自定义社交媒体卡片",
     icon: <Photo className="h-5 w-5 text-gray-600" />,
     description:
-      "Overlay custom OG images on your links to make them stand out on social media.",
-    cta: "View demo", //custom cta
+      "在您的链接上叠加自定义 OG 图像，使它们在社交媒体上脱颖而出。",
+    cta: "查看演示", //custom cta
     demo: "https://d2vwwcvoksz7ty.cloudfront.net/og.mp4",
   },
   {
     key: "qr",
-    title: "Free QR code generator",
+    title: "免费二维码生成器",
     icon: <QR className="h-5 w-5 text-gray-600" />,
     description:
-      "QR codes and short links are like peas in a pod. That's why we've built a QR code generator right into Dub.",
-    cta: "View demo", //custom cta
+      "QR 码和短链接就像豆荚里的豌豆。 这就是我们在 Dub 中内置二维码生成器的原因。",
+    cta: "查看演示", //custom cta
     demo: "https://d2vwwcvoksz7ty.cloudfront.net/qr.mp4",
   },
   {
     key: "team",
-    title: "Collaborate with your team",
+    title: "与您的团队协作",
     icon: <Users className="h-5 w-5 text-gray-600" />,
     description:
-      "With Dub, you can invite unlimited team members to collaborate on your project for free - no more sharing logins via Google groups.",
+      "使用 Dub，您可以免费邀请无限的团队成员来协作处理您的项目 - 不再通过 Google 群组共享登录信息。",
     cta: (
       <a
-        href="https://app.dub.sh"
+        href="https://app.l0l.ink"
         target="_blank"
         rel="noreferrer"
         className="block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
       >
-        Invite your teammates
+        邀请你的队友
       </a>
     ),
     demo: "https://d2vwwcvoksz7ty.cloudfront.net/team.mp4",
@@ -126,17 +126,16 @@ export default function Features() {
         <div className="mx-auto max-w-md text-center sm:max-w-xl">
           <h2 className="font-display text-4xl font-extrabold leading-tight text-black sm:text-5xl sm:leading-tight">
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Powerful
+            强大的
             </span>{" "}
-            features for{" "}
+            功能{" "}
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              modern
+            现代的
             </span>{" "}
-            marketing teams
+            营销团队
           </h2>
           <p className="mt-5 text-gray-600 sm:text-lg">
-            Dub is more than just a link shortener. We've built a suite of
-            powerful features that gives you marketing superpowers.
+          Dub 不仅仅是一个链接缩短器。 我们构建了一套强大的功能，让您拥有强大的营销能力。
           </p>
         </div>
 
@@ -163,14 +162,14 @@ export default function Features() {
                           onClick={() => setShowAddEditLinkModal(true)}
                           className="block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
                         >
-                          View demo
+                          查看演示
                         </button>
                       ) : key === "qr" ? (
                         <button
                           onClick={() => setShowLinkQRModal(true)}
                           className="block max-w-fit rounded-full border border-black bg-black px-4 py-1.5 text-sm text-white transition-all hover:bg-white hover:text-black"
                         >
-                          View demo
+                          查看演示
                         </button>
                       ) : (
                         cta

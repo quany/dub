@@ -9,7 +9,7 @@ export default async function handler(req: NextRequest) {
     const count = 50;
 
     const response = await fetch(
-      `https://api.us-east.tinybird.co/v0/pipes/coordinates.json`,
+      `https://api.tinybird.co/v0/pipes/coordinates.json`,
       {
         headers: {
           Authorization: `Bearer ${process.env.TINYBIRD_API_KEY}`,

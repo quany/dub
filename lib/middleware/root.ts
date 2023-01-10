@@ -15,10 +15,12 @@ export default async function RootMiddleware(
     return NextResponse.next();
   }
 
+  console.log('domain', domain);
+
   if (HOME_HOSTNAMES.has(domain) || domain.endsWith(".vercel.app")) {
     return NextResponse.next();
   } else {
-    ev.waitUntil(recordClick(domain, req)); // record clicks on root page (if domain is not dub.sh)
+    ev.waitUntil(recordClick(domain, req)); // record clicks on root page (if domain is not l0l.ink)
 
     const { target, rewrite } =
       (await redis.get<RootDomainProps>(`root:${domain}`)) || {};

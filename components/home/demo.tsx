@@ -44,7 +44,7 @@ const Demo = () => {
                 title="Maximum number of links reached. Swipe to delete existing links or
               create a free account."
                 cta="Start For Free"
-                ctaLink="https://app.dub.sh/register"
+                ctaLink="https://app.l0l.ink/register"
               />
             }
           >
@@ -62,7 +62,7 @@ const Demo = () => {
             <Link className="absolute inset-y-0 left-0 my-2 ml-3 w-5 text-gray-400" />
             <input
               type="url"
-              placeholder="Shorten your link"
+              placeholder="缩短链接"
               value={url}
               onInput={(e) => {
                 setUrl((e.target as HTMLInputElement).value);
@@ -127,16 +127,16 @@ const Demo = () => {
           variants={FRAMER_MOTION_LIST_ITEM_VARIANTS}
           className="rounded-md border border-gray-200 bg-white p-3 text-sm text-gray-500 shadow-lg"
         >
-          Note: Public links will be automatically-deleted after 30 minutes.{" "}
+          注意：公共链接将在 30 分钟后自动删除,{" "}
           <a
-            href="https://app.dub.sh/register"
+            href="https://app.l0l.ink/register"
             target="_blank"
             rel="noreferrer"
             className="font-medium text-gray-700 underline transition-all hover:text-black"
           >
-            Create a free account
+            创建一个免费帐户
           </a>{" "}
-          to keep your links forever.
+          以永久保留您的链接。
         </motion.li>
       </motion.ul>
     </div>

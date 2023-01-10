@@ -295,7 +295,7 @@ function QrDropdown({ download, qrData, showLogo, logo }) {
                     ...(showLogo && {
                       imageSettings: {
                         ...qrData.imageSettings,
-                        src: logo || "https://dub.sh/_static/logo.svg",
+                        src: logo || "https://l0l.ink/_static/logo.svg",
                       },
                     }),
                   }),

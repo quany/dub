@@ -8,11 +8,11 @@ export default function OSS({ stars }: { stars: number }) {
     <MaxWidthWrapper className="mb-20 py-20">
       <div className="mx-auto max-w-md text-center sm:max-w-xl">
         <h2 className="bg-gradient-to-r from-gray-800 via-gray-500 to-gray-800 bg-clip-text font-display text-4xl font-extrabold leading-tight text-transparent sm:text-5xl sm:leading-tight">
-          Proudly open-source
+        自豪地开源
         </h2>
         <p className="mt-5 text-gray-600 sm:text-lg">
-          Our source code is available on GitHub - feel free to read, review, or
-          contribute to it however you want!
+        我们的源代码可在 GitHub 上获取 - 请随意阅读、审查或
+           随心所欲地为它做出贡献！
         </p>
       </div>
       <div className="flex items-center justify-center py-10">

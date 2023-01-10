@@ -13,7 +13,7 @@ export default async function handler(req: NextRequest) {
     if (!interval) {
       const response = await conn.execute(
         "SELECT clicks FROM Link WHERE domain = ? AND `key` = ?",
-        ["dub.sh", key],
+        ["l0l.ink", key],
       );
       let clicks = 0;
       try {
@@ -26,7 +26,7 @@ export default async function handler(req: NextRequest) {
 
     // if Planetscale fails or no interval is provided, get the total clicks from Tinybird
     const response = await getStats({
-      domain: "dub.sh",
+      domain: "l0l.ink",
       key,
       endpoint: "clicks",
       interval,
