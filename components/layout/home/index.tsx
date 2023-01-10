@@ -44,7 +44,7 @@ export default function HomeLayout({
               {!session && status !== "loading" ? (
                 <motion.a
                   {...FADE_IN_ANIMATION_SETTINGS}
-                  href="https://quany-bookish-space-zebra-4xjqvq45x3qr6p-3000.preview.app.github.dev/login"
+                  href="https://app.l0l.ink/login"
                   className="rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
                 >
                   登录
@@ -52,7 +52,7 @@ export default function HomeLayout({
               ) : (
                 <motion.a
                   {...FADE_IN_ANIMATION_SETTINGS}
-                  href="https://quany-bookish-space-zebra-4xjqvq45x3qr6p-3000.preview.app.github.dev/"
+                  href="https://app.l0l.ink/"
                   className="rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
                 >
                   控制面板

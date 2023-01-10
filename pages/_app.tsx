@@ -30,6 +30,7 @@ function MyApp({
         <Component {...pageProps} />
       </main>
       <Analytics />
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081175603682487" crossorigin="anonymous"></Script>
     </SessionProvider>
   );
 }
