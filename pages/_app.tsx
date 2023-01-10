@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import { Analytics } from "@vercel/analytics/react";
 import type { Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
+import Script from 'next/script'
 import "@/styles/globals.css";
 import cx from "classnames";
 import localFont from "@next/font/local";
