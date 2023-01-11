@@ -55,7 +55,7 @@ export default function Home({
         <Logos />
         <Globe />
         <Features />
-        <Testimonials userCount={userCount} tweets={tweets} />
+        {/* <Testimonials userCount={userCount} tweets={tweets} /> */}
         <Pricing />
         <OSS stars={stars} />
       </div>
