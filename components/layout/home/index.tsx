@@ -31,8 +31,8 @@ export default function HomeLayout({
             <div className="flex items-center">
               <Link href="/">
                 <Image
-                  src="/_static/logotype.svg"
-                  alt="Dub.sh logo"
+                  src="/_static/icon_shortlink.svg"
+                  alt="logo"
                   width={834}
                   height={236}
                   className="w-24"
