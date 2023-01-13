@@ -6,16 +6,17 @@ export const config = {
   runtime: "experimental-edge",
 };
 
-const satoshi = fetch(
-  new URL("../../../styles/Satoshi-Black.ttf", import.meta.url),
-).then((res) => res.arrayBuffer());
+// const satoshi = fetch(
+//   new URL("../../../styles/Satoshi-Black.ttf", import.meta.url),
+// ).then((res) => res.arrayBuffer());
 
 const inter = fetch(
   new URL("../../../styles/Inter-Bold.ttf", import.meta.url),
 ).then((res) => res.arrayBuffer());
 
 export default async function handler(req: NextRequest) {
-  const [satoshiData, interData] = await Promise.all([satoshi, inter]);
+  // const [satoshiData, interData] = await Promise.all([satoshi, inter]);
+  const [ interData] = await Promise.all([inter]);
 
   const { searchParams } = req.nextUrl;
   const key = searchParams.get("key") || "github";
@@ -41,7 +42,7 @@ export default async function handler(req: NextRequest) {
           style={{
             fontSize: "100px",
             fontWeight: "bold",
-            fontFamily: "Satoshi",
+            // fontFamily: "Satoshi",
             background:
               "linear-gradient(95.78deg, #C7BF00 21.66%, #E43838 86.47%)",
             backgroundClip: "text",
@@ -69,10 +70,10 @@ export default async function handler(req: NextRequest) {
       width: 1200,
       height: 630,
       fonts: [
-        {
-          name: "Satoshi",
-          data: satoshiData,
-        },
+        // {
+        //   name: "Satoshi",
+        //   data: satoshiData,
+        // },
         {
           name: "Inter",
           data: interData,

@@ -9,7 +9,7 @@ export default function NoProjectsPlaceholder({
   return (
     <div className="flex flex-col items-center justify-center rounded-md border border-gray-200 bg-white py-12">
       <h2 className="z-10 text-xl font-semibold text-gray-700">
-        You don't have any projects yet!
+        您还没有任何项目！
       </h2>
       <BlurImage
         src="/_static/illustrations/shopping-call.svg"
@@ -22,13 +22,13 @@ export default function NoProjectsPlaceholder({
         onClick={() => setShowAddProjectModal(true)}
         className="rounded-md border border-black bg-black px-10 py-2 text-sm font-medium text-white transition-all duration-75 hover:bg-white hover:text-black active:scale-95"
       >
-        Create a project
+        创建项目
       </button>
       <Link
         href="/links"
         className="mt-3 text-sm font-medium text-gray-500 transition-all hover:text-gray-800 active:scale-95"
       >
-        Add a Dub.sh link instead
+        添加一个 l0l.ink 链接
       </Link>
     </div>
   );
