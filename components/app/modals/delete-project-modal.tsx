@@ -39,10 +39,9 @@ function DeleteProjectModal({
             width={20}
             height={20}
           />
-          <h3 className="text-lg font-medium">Delete Project</h3>
+          <h3 className="text-lg font-medium">删除项目</h3>
           <p className="text-center text-sm text-gray-500">
-            Warning: This will permanently delete your project, custom domain,
-            and all associated links + their stats.
+          警告：这将永久删除您的项目、自定义域和所有关联链接及其统计信息。
           </p>
         </div>
 
@@ -76,9 +75,8 @@ function DeleteProjectModal({
               htmlFor="project-slug"
               className="block text-sm font-medium text-gray-700"
             >
-              Enter the project slug{" "}
-              <span className="font-semibold text-black">{slug}</span> to
-              continue:
+              输入项目别名{" "}
+              <span className="font-semibold text-black">{slug}</span> 继续:
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
               <input
@@ -127,7 +125,7 @@ function DeleteProjectModal({
             {deleting ? (
               <LoadingDots color="#808080" />
             ) : (
-              <p>Confirm delete project</p>
+              <p>删除项目</p>
             )}
           </button>
         </form>

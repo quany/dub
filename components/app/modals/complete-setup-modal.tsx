@@ -41,10 +41,9 @@ function CompleteSetupModal({
             width={20}
             height={20}
           />
-          <h3 className="text-lg font-medium">You're almost there!</h3>
+          <h3 className="text-lg font-medium">你快到了！</h3>
           <p className="text-center text-sm text-gray-500">
-            Complete the following steps and start sharing your branded short
-            links.
+          完成以下步骤并开始共享您的品牌短链接。
           </p>
         </div>
         <div className="flex flex-col space-y-6 bg-gray-50 px-4 py-8 text-left sm:px-12">

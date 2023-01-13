@@ -46,7 +46,7 @@ export default function SettingsLayout({ children }: { children: ReactNode }) {
       <div className="flex h-36 items-center border-b border-gray-200 bg-white">
         <MaxWidthWrapper>
           <div className="flex items-center justify-between">
-            <h1 className="text-2xl text-gray-600">Settings</h1>
+            <h1 className="text-2xl text-gray-600">设置</h1>
           </div>
         </MaxWidthWrapper>
       </div>

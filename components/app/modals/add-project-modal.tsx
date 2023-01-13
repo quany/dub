@@ -97,7 +97,7 @@ function AddProjectModalHelper({
             width={20}
             height={20}
           />
-          <h3 className="text-lg font-medium">Add a new project</h3>
+          <h3 className="text-lg font-medium">添加项目</h3>
         </div>
 
         <form
@@ -138,7 +138,7 @@ function AddProjectModalHelper({
               htmlFor="name"
               className="block text-sm font-medium text-gray-700"
             >
-              Project Name
+              项目名称
             </label>
             <div className="mt-1 flex rounded-md shadow-sm">
               <input
@@ -208,7 +208,7 @@ function AddProjectModalHelper({
               htmlFor="domain"
               className="block text-sm font-medium text-gray-700"
             >
-              Shortlink Domain
+              短链接域名
             </label>
             <div className="relative mt-1 flex rounded-md shadow-sm">
               <input
@@ -266,7 +266,7 @@ function AddProjectModalHelper({
                 : "border-black bg-black text-white hover:bg-white hover:text-black"
             } flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none`}
           >
-            {saving ? <LoadingDots color="#808080" /> : <p>Add project</p>}
+            {saving ? <LoadingDots color="#808080" /> : <p>添加</p>}
           </button>
         </form>
       </div>

@@ -58,10 +58,9 @@ function EditDomainModal({
             width={20}
             height={20}
           />
-          <h3 className="text-lg font-medium">Change Domain</h3>
+          <h3 className="text-lg font-medium">更改域名</h3>
           <p className="text-center text-sm text-gray-500">
-            Warning: Changing your project's domain will break all existing
-            short links and reset their analytics.
+          警告：更改项目的域将破坏所有现有的短链接并重置其分析。
           </p>
         </div>
 
@@ -97,7 +96,7 @@ function EditDomainModal({
               htmlFor="old-domain"
               className="block text-sm font-medium text-gray-700"
             >
-              Old Domain
+              老域名
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
               <input
@@ -117,7 +116,7 @@ function EditDomainModal({
               htmlFor="new-domain"
               className="block text-sm font-medium text-gray-700"
             >
-              New Domain
+             新域名
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
               <input
@@ -153,14 +152,14 @@ function EditDomainModal({
             {domainError &&
               (domainError === "Domain is already in use." ? (
                 <p className="mt-2 text-sm text-red-600" id="domain-error">
-                  Domain is already in use.{" "}
+                  这个域名早已存在。{" "}
                   <a
                     className="underline"
                     href="mailto:steven@l0l.ink?subject=My Domain Is Already In Use"
                   >
-                    Contact us
+                    联系我们
                   </a>{" "}
-                  if you'd like to use this domain for your project.
+                  如果您想将此域用于您的项目。
                 </p>
               ) : (
                 <p className="mt-2 text-sm text-red-600" id="domain-error">
@@ -174,11 +173,11 @@ function EditDomainModal({
               htmlFor="verification"
               className="block text-sm text-gray-700"
             >
-              To verify, type{" "}
+              要验证，请键入{" "}
               <span className="font-semibold text-red-600">
-                yes, change my domain
+              是的，更改我的域名
               </span>{" "}
-              below
+              以下
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
               <input
@@ -205,7 +204,7 @@ function EditDomainModal({
             {saving ? (
               <LoadingDots color="#808080" />
             ) : (
-              <p>Confirm domain change</p>
+              <p>确认域名更改</p>
             )}
           </button>
         </form>

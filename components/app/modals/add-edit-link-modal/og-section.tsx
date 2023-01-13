@@ -65,7 +65,7 @@ export default function OGSection({
     <div className="grid gap-5 border-b border-gray-200 pb-5">
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium text-gray-900">
-          Custom Social Media Cards
+        自定义社交媒体卡
         </h2>
         <Switch
           fn={() => setData((prev) => ({ ...prev, proxy: !proxy }))}
@@ -81,10 +81,10 @@ export default function OGSection({
         >
           <div>
             <div className="flex items-center justify-between">
-              <p className="block text-sm font-medium text-gray-700">Image</p>
+              <p className="block text-sm font-medium text-gray-700">图片</p>
               {fileSizeTooBig && (
                 <p className="text-sm text-red-500">
-                  File size too big (max 1MB)
+                  文件太大（最大 1MB）
                 </p>
               )}
             </div>
@@ -106,9 +106,9 @@ export default function OGSection({
               >
                 <UploadCloud className="h-7 w-7 text-gray-500 transition-all duration-75 group-hover:scale-110 group-active:scale-95" />
                 <p className="mt-2 text-sm text-gray-500">
-                  Recommended: 1200 x 627 pixels
+                  推荐: 1200 x 627 pixels
                 </p>
-                <span className="sr-only">OG Image upload</span>
+                <span className="sr-only">OG图片上传</span>
               </div>
               {image &&
                 (image.startsWith("https://res.cloudinary.com") ? (
@@ -141,7 +141,7 @@ export default function OGSection({
 
           <div>
             <div className="flex items-center justify-between">
-              <p className="block text-sm font-medium text-gray-700">Title</p>
+              <p className="block text-sm font-medium text-gray-700">标题</p>
               <p className="text-sm text-gray-500">{title?.length || 0}/120</p>
             </div>
             <div className="relative mt-1 flex rounded-md shadow-sm">
@@ -169,7 +169,7 @@ export default function OGSection({
           <div>
             <div className="flex items-center justify-between">
               <p className="block text-sm font-medium text-gray-700">
-                Description
+                描述
               </p>
               <p className="text-sm text-gray-500">
                 {description?.length || 0}/240

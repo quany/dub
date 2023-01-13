@@ -33,16 +33,16 @@ export default function Interim({
       >
         <Logo className="h-11 w-11" />
         <h1 className="font-display text-3xl font-semibold text-gray-800 transition-colors sm:text-4xl">
-          Let's get started
+        让我们开始吧
         </h1>
       </motion.div>
       <motion.p
         className="text-gray-600 transition-colors sm:text-lg"
         variants={STAGGER_CHILD_VARIANTS}
       >
-        Have your own domain? Start creating branded short links for free.{" "}
+       有自己的域名吗？ 开始免费创建品牌短链接。{" "}
         <br className="hidden sm:block" />
-        Don't have one? Use the default{" "}
+        没有吗？ 使用默认域名{" "}
         <a
           className="text-gray-500 underline transition-colors hover:text-gray-700"
           target="_blank"
@@ -51,7 +51,7 @@ export default function Interim({
         >
           l0l.ink
         </a>{" "}
-        domain to create short links.
+        创建短链接。
       </motion.p>
       <motion.div
         variants={STAGGER_CHILD_VARIANTS}
@@ -68,7 +68,7 @@ export default function Interim({
             height={250}
             className="pointer-events-none -mt-8 -mb-3 w-48 sm:w-60"
           />
-          <p>I have a domain</p>
+          <p>有域名</p>
         </button>
         <button
           onClick={() => setState("link")}
@@ -81,7 +81,7 @@ export default function Interim({
             height={250}
             className="pointer-events-none -mt-8 -mb-3 w-48 sm:w-60"
           />
-          <p>I don't have a domain</p>
+          <p>没有域名</p>
         </button>
       </motion.div>
     </motion.div>

@@ -45,18 +45,18 @@ function UpgradePlanModal({
             width={20}
             height={20}
           />
-          <h3 className="text-xl font-medium">Upgrade to Pro</h3>
+          <h3 className="text-xl font-medium">升级专业版</h3>
           <div className="flex items-center space-x-2">
-            <p className="text-sm text-gray-600">Billed Monthly</p>
+            <p className="text-sm text-gray-600">每月结算</p>
             <Switch fn={setAnnualBilling} />
-            <p className="text-sm text-gray-600">Billed Annually</p>
+            <p className="text-sm text-gray-600">按年计费</p>
           </div>
         </div>
 
         <div className="relative mx-auto -mt-[5.1rem] -mb-[5.3rem] max-w-sm rounded-lg border border-gray-200 bg-white shadow-md">
           {annualBilling && (
             <span className="absolute top-2 -right-0.5 rounded-l-md bg-gradient-to-r from-blue-600 to-cyan-600 px-2 py-0.5 text-xs text-white">
-              2 Free Months
+              2 个月免费使用期
             </span>
           )}
           <div className="flex w-full max-w-md items-center justify-between p-5 pt-7">
@@ -122,7 +122,7 @@ function UpgradePlanModal({
             href="mailto:steven@l0l.ink?subject=Upgrade%20to%20Enterprise%20Plan"
             className="text-sm text-gray-500 transition-all hover:text-gray-700"
           >
-            Or contact us for Enterprise
+            或联系我们获取企业版
           </a>
         </div>
       </div>

@@ -108,7 +108,7 @@ function LinkQRModalHelper({
           ) : (
             <Logo className="h-10 w-10" />
           )}
-          <h3 className="text-lg font-medium">Download QR Code</h3>
+          <h3 className="text-lg font-medium">下载二维码</h3>
         </div>
 
         <div className="flex flex-col space-y-6 bg-gray-50 py-6 text-left sm:rounded-b-2xl">
@@ -147,7 +147,7 @@ function LinkQRModalHelper({
               }}
               className="flex items-center justify-center gap-2 rounded-md border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
             >
-              <Clipboard className="h-4 w-4" /> Copy
+              <Clipboard className="h-4 w-4" /> 复制
             </button>
             <QrDropdown
               download={download}
@@ -192,7 +192,7 @@ function AdvancedSettings({ qrData, setFgColor, setShowLogo }) {
               expanded ? "rotate-90" : ""
             } transition-all`}
           />
-          <p className="text-sm text-gray-600">Advanced options</p>
+          <p className="text-sm text-gray-600">高级选项</p>
         </button>
       </div>
       {expanded && (
@@ -333,7 +333,7 @@ function QrDropdown({ download, qrData, showLogo, logo }) {
           className="flex w-full items-center justify-center gap-2 rounded-md border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black"
         >
           <Download />
-          Export
+          导出
         </button>
       </Popover>
     </>

@@ -2,8 +2,8 @@ import Head from "next/head";
 import { FAVICON_FOLDER } from "@/lib/constants";
 
 export default function Meta({
-  title = "Dub - Link Management for Modern Marketing Teams",
-  description = "Dub is an open-source link management tool for modern marketing teams to create, share, and track short links.",
+  title = "l0l - 现代营销团队的链接管理",
+  description = "l0l 是链接管理工具，供现代营销团队创建、共享和跟踪短链接。",
   image = "https://l0l.ink/_static/thumbnail.png",
 }: {
   title?: string;

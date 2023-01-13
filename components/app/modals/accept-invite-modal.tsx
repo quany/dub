@@ -41,7 +41,7 @@ function AcceptInviteModal({
               width={20}
               height={20}
             />
-            <h3 className="text-lg font-medium">Project Invitation</h3>
+            <h3 className="text-lg font-medium">项目邀请</h3>
             <p className="text-center text-sm text-gray-500">
               You've been invited to join and collaborate on the{" "}
               <span className="font-mono text-purple-600">
@@ -74,7 +74,7 @@ function AcceptInviteModal({
               {accepting ? (
                 <LoadingDots color="#808080" />
               ) : (
-                <p>Accept invite</p>
+                <p>接受邀请</p>
               )}
             </button>
           </div>
@@ -89,9 +89,9 @@ function AcceptInviteModal({
               width={20}
               height={20}
             />
-            <h3 className="text-lg font-medium">Project Invitation Expired</h3>
+            <h3 className="text-lg font-medium">项目邀请已过期</h3>
             <p className="text-center text-sm text-gray-500">
-              This invite has expired or is no longer valid.
+            此邀请已过期或不再有效。
             </p>
           </div>
           <div className="flex flex-col space-y-6 bg-gray-50 px-4 py-8 text-left sm:px-16">
@@ -99,7 +99,7 @@ function AcceptInviteModal({
               href="/"
               className="flex h-10 w-full items-center justify-center rounded-md border border-black bg-black text-sm text-white transition-all hover:bg-white hover:text-black focus:outline-none"
             >
-              Back to dashboard
+              返回控制台
             </Link>
           </div>
         </div>

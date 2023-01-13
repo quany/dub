@@ -51,10 +51,9 @@ function DeleteLinkModal({
             width={20}
             height={20}
           />
-          <h3 className="text-lg font-medium">Delete {shortlink}</h3>
+          <h3 className="text-lg font-medium">删除 {shortlink}</h3>
           <p className="text-center text-sm text-gray-500">
-            Warning: Deleting this link will remove all of its stats. This
-            action cannot be undone.
+          警告：删除此链接将删除其所有统计信息。 此操作无法撤消。
           </p>
         </div>
 
@@ -117,7 +116,7 @@ function DeleteLinkModal({
                 : "border-red-600 bg-red-600 text-white hover:bg-white hover:text-red-600"
             } flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none`}
           >
-            {deleting ? <LoadingDots color="#808080" /> : <p>Confirm delete</p>}
+            {deleting ? <LoadingDots color="#808080" /> : <p>删除</p>}
           </button>
         </form>
       </div>

@@ -49,9 +49,8 @@ export default function ProjectCard({
                 <Tooltip
                   content={
                     <TooltipContent
-                      title="This domain is not correctly configured. Please configure your domain to
-                  start adding links."
-                      cta="Configure Domain"
+                      title="此域名配置不正确。 请配置您的域以开始添加链接。"
+                      cta="配置域名"
                       ctaLink={`/${slug}/settings`}
                     />
                   }

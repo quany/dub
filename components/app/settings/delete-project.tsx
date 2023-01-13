@@ -7,11 +7,9 @@ export default function DeleteProject() {
     <div className="rounded-lg border border-gray-200 bg-white">
       <DeleteProjectModal />
       <div className="flex flex-col space-y-3 p-5 sm:p-10">
-        <h2 className="text-xl font-medium">Delete Project</h2>
+        <h2 className="text-xl font-medium">删除项目</h2>
         <p className="text-sm text-gray-500">
-          Permanently delete your project, custom domain, and all associated
-          links + their stats. This action cannot be undone - please proceed
-          with caution.
+          永久删除您的项目、自定义域和所有关联链接及其统计信息。 此操作无法撤消 - 请谨慎操作。
         </p>
       </div>
       <div className="border-b border-gray-200" />
@@ -21,7 +19,7 @@ export default function DeleteProject() {
           onClick={() => setShowDeleteProjectModal(true)}
           className="h-9 w-full rounded-md border border-red-600 bg-red-600 text-sm text-white transition-all duration-150 ease-in-out hover:bg-white hover:text-red-600 focus:outline-none sm:w-32"
         >
-          Delete Project
+          删除项目
         </button>
       </div>
     </div>

@@ -46,9 +46,9 @@ export default function PlanUsage() {
     <div className="rounded-lg border border-gray-200 bg-white">
       <UpgradePlanModal />
       <div className="flex flex-col space-y-3 p-10">
-        <h2 className="text-xl font-medium">Plan &amp; Usage</h2>
+        <h2 className="text-xl font-medium">计划 &amp; 使用</h2>
         <p className="text-sm text-gray-500">
-          You are currently on the{" "}
+        您目前在{" "}
           {plan ? (
             <span
               className={`capitalize ${
@@ -63,14 +63,14 @@ export default function PlanUsage() {
             </span>
           ) : (
             <span className="rounded-full bg-gray-200 px-2 py-0.5 text-xs text-gray-200">
-              load
+              加载
             </span>
           )}{" "}
-          plan.
+          计划.
           {billingStart && billingEnd && (
             <>
               {" "}
-              Current billing cycle:{" "}
+              当前计费周期:{" "}
               <span className="font-medium text-black">
                 {billingStart} - {billingEnd}
               </span>
@@ -83,7 +83,7 @@ export default function PlanUsage() {
       <div className="grid grid-cols-1 divide-y divide-gray-200 sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
         <div className="flex flex-col space-y-2 p-10">
           <div className="flex items-center">
-            <h3 className="font-medium">Total Link Clicks</h3>
+            <h3 className="font-medium">总链接点击次数</h3>
             <Tooltip content="Number of billable link clicks across all your projects.">
               <div className="flex h-4 w-8 justify-center">
                 <QuestionCircle className="h-4 w-4 text-gray-600" />
@@ -92,7 +92,7 @@ export default function PlanUsage() {
           </div>
           {!loading ? (
             <p className="text-sm text-gray-600">
-              {nFormatter(usage)} / {nFormatter(usageLimit)} clicks (
+              {nFormatter(usage)} / {nFormatter(usageLimit)} 点击 (
               {((usage / usageLimit) * 100).toFixed(1)}%)
             </p>
           ) : (
@@ -112,7 +112,7 @@ export default function PlanUsage() {
           </div>
         </div>
         <div className="p-10">
-          <h3 className="font-medium">Number of Projects</h3>
+          <h3 className="font-medium">项目数</h3>
           <div className="mt-4 flex items-center">
             {projectCount ? (
               <p className="text-2xl font-semibold text-black">
@@ -131,7 +131,7 @@ export default function PlanUsage() {
         {plan ? (
           plan === "Pro 1M" ? (
             <p className="text-sm text-gray-500">
-              For higher limits, contact us to upgrade to the Enterprise plan.
+              如需更高限制，请联系我们升级到企业计划。
             </p>
           ) : (
             <p className="text-sm text-gray-500">
@@ -160,7 +160,7 @@ export default function PlanUsage() {
               }}
               className="h-9 w-24 rounded-md border border-blue-500 bg-blue-500 text-sm text-white transition-all duration-150 ease-in-out hover:bg-white hover:text-blue-500 focus:outline-none"
             >
-              Upgrade
+              升级
             </button>
           ) : (
             <div className="flex space-x-3">

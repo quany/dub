@@ -52,20 +52,20 @@ export default function Intro({
             className="font-display text-4xl font-bold text-gray-800 transition-colors sm:text-5xl"
             variants={STAGGER_CHILD_VARIANTS}
           >
-            Welcome to Dub
+            欢迎来到 l0l
           </motion.h1>
           <motion.p
             className="max-w-md text-gray-600 transition-colors sm:text-lg"
             variants={STAGGER_CHILD_VARIANTS}
           >
-            Dub gives you marketing superpowers with short links that stand out.
+            l0l 通过突出的短链接为您提供营销超级大国。
           </motion.p>
           <motion.button
             variants={STAGGER_CHILD_VARIANTS}
             className="rounded-full bg-gray-800 px-10 py-2 font-medium text-white transition-colors hover:bg-black"
             onClick={() => setState("interim")}
           >
-            Get Started
+            开始
           </motion.button>
         </motion.div>
       )}

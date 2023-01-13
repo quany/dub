@@ -41,10 +41,9 @@ function InviteTeammateModal({
             width={20}
             height={20}
           />
-          <h3 className="text-lg font-medium">Invite Teammate</h3>
+          <h3 className="text-lg font-medium">邀请队友</h3>
           <p className="text-center text-sm text-gray-500">
-            Invite a teammate to join your project. Invitations will be valid
-            for 7 days.
+          邀请队友加入您的项目。 邀请有效期为 7 天。
           </p>
         </div>
 
@@ -73,7 +72,7 @@ function InviteTeammateModal({
         >
           <div>
             <label htmlFor="email" className="block text-sm text-gray-700">
-              Email
+              邮件
             </label>
             <div className="relative mt-1 rounded-md shadow-sm">
               <input
@@ -100,7 +99,7 @@ function InviteTeammateModal({
             {state === "inviting" ? (
               <LoadingDots color="#808080" />
             ) : (
-              <p>Send invite</p>
+              <p>发送邀请</p>
             )}
           </button>
           {error && <p className="text-center text-xs text-red-500">{error}</p>}

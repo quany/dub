@@ -26,17 +26,16 @@ export default function DomainConfiguration({
     return (
       <div className="border-t border-gray-200 pt-5">
         <p className="text-sm">
-          Please set the following TXT record on{" "}
-          <InlineSnippet>{domainJson.apexName}</InlineSnippet> to prove
-          ownership of <InlineSnippet>{domainJson.name}</InlineSnippet>:
+        请设置以下TXT记录{" "}
+          <InlineSnippet>{domainJson.apexName}</InlineSnippet> 证明所有权 <InlineSnippet>{domainJson.name}</InlineSnippet>:
         </p>
         <div className="my-5 flex items-start justify-start space-x-10 rounded-md bg-gray-50 p-2">
           <div>
-            <p className="text-sm font-bold">Type</p>
+            <p className="text-sm font-bold">类型</p>
             <p className="mt-2 font-mono text-sm">{txtVerification.type}</p>
           </div>
           <div>
-            <p className="text-sm font-bold">Name</p>
+            <p className="text-sm font-bold">名称</p>
             <p className="mt-2 font-mono text-sm">
               {txtVerification.domain.slice(
                 0,
@@ -45,16 +44,14 @@ export default function DomainConfiguration({
             </p>
           </div>
           <div>
-            <p className="text-sm font-bold">Value</p>
+            <p className="text-sm font-bold">值</p>
             <p className="mt-2 font-mono text-sm">
               <span className="text-ellipsis">{txtVerification.value}</span>
             </p>
           </div>
         </div>
         <p className="text-sm">
-          Warning: if you are using this domain for another site, setting this
-          TXT record will transfer domain ownership away from that site and
-          break it. Please exercise caution when setting this record.
+        警告：如果您将此域用于另一个站点，设置此 TXT 记录会将域所有权从该站点转移并破坏它。 设置此记录时请谨慎行事。
         </p>
       </div>
     );
@@ -103,17 +100,17 @@ export default function DomainConfiguration({
         </p>
         <div className="flex items-center justify-start space-x-10 rounded-md bg-gray-50 p-2">
           <div>
-            <p className="text-sm font-bold">Type</p>
+            <p className="text-sm font-bold">类型</p>
             <p className="mt-2 font-mono text-sm">{recordType}</p>
           </div>
           <div>
-            <p className="text-sm font-bold">Name</p>
+            <p className="text-sm font-bold">名称</p>
             <p className="mt-2 font-mono text-sm">
               {recordType === "A" ? "@" : subdomain ?? "www"}
             </p>
           </div>
           <div>
-            <p className="text-sm font-bold">Value</p>
+            <p className="text-sm font-bold">值</p>
             <p className="mt-2 font-mono text-sm">
               {recordType === "A" ? `76.76.21.21` : `cname.l0l.ink`}
             </p>
@@ -124,9 +121,8 @@ export default function DomainConfiguration({
           </div>
         </div>
         <p className="mt-5 text-sm">
-          Note: for TTL, if <InlineSnippet>86400</InlineSnippet> is not
-          available, set the highest value possible. Also, domain propagation
-          can take up to an hour.
+        注意：对于 TTL，如果不是  <InlineSnippet>86400</InlineSnippet> 
+           可用，设置可能的最高值。 此外，域传播最多可能需要一个小时。
         </p>
       </div>
     </div>

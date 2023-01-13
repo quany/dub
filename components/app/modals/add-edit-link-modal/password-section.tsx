@@ -35,7 +35,7 @@ export default function PasswordSection({
     <div className="border-b border-gray-200 pb-5">
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-medium text-gray-900">
-          Password Protection
+          密码保护
         </h2>
         <Switch fn={() => setEnabled(!enabled)} checked={enabled} />
       </div>

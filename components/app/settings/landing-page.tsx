@@ -46,17 +46,17 @@ export default function LandingPage() {
         }).then(async (res) => {
           setSaving(false);
           if (res.status === 200) {
-            toast.success("Successfully updated landing page");
+            toast.success("成功更新着陆页");
           }
         });
       }}
       className="rounded-lg border border-gray-200 bg-white"
     >
       <div className="relative flex flex-col space-y-3 p-5 sm:p-10">
-        <h2 className="text-xl font-medium">Landing Page</h2>
+        <h2 className="text-xl font-medium">着陆页</h2>
         <div className="flex items-center space-x-1">
           <p className="text-sm text-gray-500">
-            Configure a page to redirect visitors when they land on{" "}
+          配置页面以在访问者登陆时重定向访问者{" "}
             <a
               href={`https://${domain}`}
               target="_blank"
@@ -78,7 +78,7 @@ export default function LandingPage() {
                 ) : (
                   nFormatter(parseInt(clicks))
                 )}{" "}
-                clicks
+                点击
               </p>
             </Link>
           )}
@@ -145,7 +145,7 @@ export default function LandingPage() {
             fullWidth
           >
             <div className="flex h-9 w-full cursor-not-allowed items-center justify-center rounded-md border border-gray-200 bg-gray-100 text-sm text-gray-300 sm:w-32">
-              Save Changes
+              保存
             </div>
           </Tooltip>
         )}
