@@ -10,13 +10,13 @@ export const config = {
 //   new URL("../../../styles/Satoshi-Black.ttf", import.meta.url),
 // ).then((res) => res.arrayBuffer());
 
-const inter = fetch(
-  new URL("../../../styles/Inter-Bold.ttf", import.meta.url),
-).then((res) => res.arrayBuffer());
+// const inter = fetch(
+//   new URL("../../../styles/Inter-Bold.ttf", import.meta.url),
+// ).then((res) => res.arrayBuffer());
 
 export default async function handler(req: NextRequest) {
   // const [satoshiData, interData] = await Promise.all([satoshi, inter]);
-  const [ interData] = await Promise.all([inter]);
+  // const [ interData] = await Promise.all([inter]);
 
   const { searchParams } = req.nextUrl;
   const key = searchParams.get("key") || "github";
@@ -56,7 +56,7 @@ export default async function handler(req: NextRequest) {
           style={{
             fontSize: "50px",
             fontWeight: "bold",
-            fontFamily: "Inter",
+            // fontFamily: "Inter",
             color: "black",
             opacity: 0.6,
             marginTop: "16px",
@@ -74,10 +74,10 @@ export default async function handler(req: NextRequest) {
         //   name: "Satoshi",
         //   data: satoshiData,
         // },
-        {
-          name: "Inter",
-          data: interData,
-        },
+        // {
+        //   name: "Inter",
+        //   data: interData,
+        // },
       ],
     },
   );
