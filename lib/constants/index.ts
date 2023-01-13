@@ -8,23 +8,23 @@ export const LOCALHOST_GEO_DATA = {
 
 export const INTERVALS = [
   {
-    display: "Last hour",
+    display: "最近一小时",
     slug: "1h",
   },
   {
-    display: "Last 24 hours",
+    display: "最近一天",
     slug: "24h",
   },
   {
-    display: "Last 7 days",
+    display: "最近 7 天",
     slug: "7d",
   },
   {
-    display: "Last 30 days",
+    display: "最近 30 天",
     slug: "30d",
   },
   {
-    display: "Last 3 months",
+    display: "最近 3 个月",
     slug: "90d",
   },
 ];
