@@ -62,7 +62,7 @@ export default async function handler(req: NextRequest) {
             marginTop: "16px",
           }}
         >
-          {nFormatter(parseInt(clicks))} TOTAL CLICKS
+          {nFormatter(parseInt(clicks))} 总点击次数
         </p>
       </div>
     ),
