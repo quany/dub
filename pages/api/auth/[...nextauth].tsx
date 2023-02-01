@@ -69,7 +69,7 @@ export const authOptions: NextAuthOptions = {
         const email = message.user.email;
         await Promise.all([
           sendMarketingMail({
-            subject: "✨ Welcome to Dub",
+            subject: "✨ 欢迎来到l0l.ink",
             to: email,
             component: <WelcomeEmail />,
           }),

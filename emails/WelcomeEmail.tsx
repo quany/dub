@@ -11,7 +11,7 @@ import Divider from "./components/Divider";
 import Footer from "./components/Footer";
 import Head from "./components/Head";
 import Header from "./components/Header";
-import { grayDark } from "./components/theme";
+// import { grayDark } from "./components/theme";
 
 export default function WelcomeEmail({ name }: { name?: string }): JSX.Element {
   return (
@@ -19,7 +19,7 @@ export default function WelcomeEmail({ name }: { name?: string }): JSX.Element {
       <Head />
       <MjmlBody width={500}>
         <MjmlWrapper cssClass="container">
-          <Header title="Welcome to Dub" />
+          <Header title="欢迎来到l0l.ink" />
           <MjmlSection padding="0">
             <MjmlColumn>
               <MjmlImage
@@ -33,29 +33,28 @@ export default function WelcomeEmail({ name }: { name?: string }): JSX.Element {
           <MjmlSection cssClass="smooth">
             <MjmlColumn>
               <MjmlText cssClass="paragraph">
-                Thanks for signing up{name && `, ${name}`}!
+                感谢您注册{name && `, ${name}`}!
               </MjmlText>
               <MjmlText cssClass="paragraph">
-                My name is Steven, and I'm the creator of Dub - the open-source
-                Bitly alternative. I'm excited to have you on board!
+                我叫Quany，我是 l0l.ink 的创建者 - 开源有点另类。 我很高兴你能加入！
               </MjmlText>
               <MjmlText cssClass="paragraph">
-                Here are a few things you can do:
+              您可以做以下几件事：
               </MjmlText>
               <MjmlText cssClass="li">
-                •&nbsp;&nbsp;Create a custom{" "}
+                •&nbsp;&nbsp;创建一个自定义{" "}
                 <a href="https://app.l0l.ink/links" target="_blank">
-                  Dub.sh short link
+                l0l 短链接
                 </a>
               </MjmlText>
               <MjmlText cssClass="li">
-                •&nbsp;&nbsp;Create a new{" "}
+                •&nbsp;&nbsp;创建一个{" "}
                 <a href="https://app.l0l.ink/" target="_blank">
-                  project
+                新项目
                 </a>{" "}
-                and add your custom domain
+                添加自己的短域名
               </MjmlText>
-              <MjmlText cssClass="li">
+              {/* <MjmlText cssClass="li">
                 •&nbsp;&nbsp;Star the repo on{" "}
                 <a href="https://github.com/steven-tey/dub" target="_blank">
                   GitHub
@@ -73,7 +72,7 @@ export default function WelcomeEmail({ name }: { name?: string }): JSX.Element {
               </MjmlText>
               <MjmlText cssClass="paragraph" color={grayDark}>
                 Steven from Dub
-              </MjmlText>
+              </MjmlText> */}
               <Divider />
             </MjmlColumn>
           </MjmlSection>
