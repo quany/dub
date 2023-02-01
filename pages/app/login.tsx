@@ -21,15 +21,15 @@ export default function Login() {
           <a href="https://l0l.ink">
             <BlurImage
               src="/_static/logo.png"
-              alt="Dub.sh logo"
+              alt="l0l.ink logo"
               className="h-10 w-10 rounded-full"
               width={20}
               height={20}
             />
           </a>
-          <h3 className="text-xl font-semibold">Sign In</h3>
+          <h3 className="text-xl font-semibold">登录</h3>
           <p className="text-sm text-gray-500">
-            Use your email address to sign in.
+          使用您的电子邮件地址登录。
           </p>
         </div>
         <form
@@ -65,7 +65,7 @@ export default function Login() {
         >
           <div>
             <label htmlFor="email" className="block text-xs text-gray-600">
-              EMAIL ADDRESS
+              邮件地址
             </label>
             <input
               id="email"
@@ -98,19 +98,17 @@ export default function Login() {
           </button>
           {noSuchAccount ? (
             <p className="text-center text-sm text-red-500">
-              No such account.{" "}
+              没有这样的账户。{" "}
               <Link href="/register" className="font-semibold text-red-600">
-                Sign up
-              </Link>{" "}
-              instead?
+                注册
+              </Link>
             </p>
           ) : (
             <p className="text-center text-sm text-gray-600">
-              Don't have an account?{" "}
+              没有账户?{" "}免费
               <Link href="/register" className="font-semibold text-gray-800">
-                Sign up
-              </Link>{" "}
-              for free.
+                注册
+              </Link>
             </p>
           )}
         </form>

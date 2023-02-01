@@ -15,8 +15,6 @@ export default async function RootMiddleware(
     return NextResponse.next();
   }
 
-  console.log('domain', domain);
-
   if (HOME_HOSTNAMES.has(domain) || domain.endsWith(".vercel.app")) {
     return NextResponse.next();
   } else {

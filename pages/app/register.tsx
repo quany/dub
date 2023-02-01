@@ -25,9 +25,9 @@ export default function Login() {
             width={20}
             height={20}
           />
-          <h3 className="text-xl font-semibold">Sign Up</h3>
+          <h3 className="text-xl font-semibold">注册</h3>
           <p className="text-sm text-gray-500">
-            Get started for free. No credit card required.
+            免费开始使用。 无需信用卡。
           </p>
         </div>
         <form
@@ -64,7 +64,7 @@ export default function Login() {
         >
           <div>
             <label htmlFor="email" className="block text-xs text-gray-600">
-              EMAIL ADDRESS
+              邮件地址
             </label>
             <input
               id="email"
@@ -97,19 +97,17 @@ export default function Login() {
           </button>
           {accountExists ? (
             <p className="text-center text-sm text-red-500">
-              This email is already registered.{" "}
+              这个邮件早已被注册。{" "}
               <Link href="/login" className="font-semibold text-red-600">
-                Log in
-              </Link>{" "}
-              instead?
+                去登录
+              </Link>
             </p>
           ) : (
             <p className="text-center text-sm text-gray-600">
-              Already registered?{" "}
+              账户已存在?{" "}
               <Link href="/login" className="font-semibold text-gray-800">
-                Sign in
-              </Link>{" "}
-              to your account.
+                去登录
+              </Link>
             </p>
           )}
         </form>
