@@ -67,25 +67,25 @@ export default function Home({
 export async function getStaticProps() {
   const userCount = await prisma.user.count();
 
-  const { stargazers_count: stars } = await fetch(
-    "https://api.github.com/repos/steven-tey/dub",
-    {
-      // optional – feel free to remove if you don't want to display star count
-      ...(process.env.GITHUB_OAUTH_TOKEN && {
-        headers: {
-          Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-      }),
-    },
-  ).then((res) => res.json());
+  // const { stargazers_count: stars } = await fetch(
+  //   "https://api.github.com/repos/steven-tey/dub",
+  //   {
+  //     // optional – feel free to remove if you don't want to display star count
+  //     ...(process.env.GITHUB_OAUTH_TOKEN && {
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.GITHUB_OAUTH_TOKEN}`,
+  //         "Content-Type": "application/json",
+  //       },
+  //     }),
+  //   },
+  // ).then((res) => res.json());
 
   // const tweets = await getTweetsMetadata(homepageTweets);
 
   return {
     props: {
       userCount,
-      stars,
+      stars: 0,
       tweets:[],
     },
     revalidate: 60,
