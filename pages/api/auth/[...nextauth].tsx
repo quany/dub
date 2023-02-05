@@ -14,7 +14,7 @@ export const authOptions: NextAuthOptions = {
     EmailProvider({
       sendVerificationRequest({ identifier, url }) {
         sendMail({
-          subject: "你得 l0l.ink 登录链接",
+          subject: "您的 l0l.ink 登录链接",
           to: identifier,
           component: <LoginLink url={url} />,
         });

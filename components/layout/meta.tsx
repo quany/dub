@@ -13,6 +13,7 @@ export default function Meta({
   return (
     <Head>
       <title>{title}</title>
+      <meta name="baidu-site-verification" content="codeva-cpw0WjcwFd" />
       <meta name="description" content={description} />
       <link
         rel="apple-touch-icon"
