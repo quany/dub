@@ -14,7 +14,7 @@ export default async function handler(
         console.log('req url:', req.url);
         console.log('req query:', req.query);
         const { echostr } = req.query as { echostr: string };
-        const msg = CryptoJS.AES.decrypt(echostr, '5xIKGoUYc3JwDWjhajNGBnUlomEJDJ45GV6eKobVcPu').toString(CryptoJS.enc.Utf8);
+        const msg = CryptoJS.AES.decrypt(CryptoJS.enc.Utf8.parse(echostr), '5xIKGoUYc3JwDWjhajNGBnUlomEJDJ45GV6eKobVcPu').toString(CryptoJS.enc.Utf8);
 
         console.log('decrypt content: ', msg);
 
