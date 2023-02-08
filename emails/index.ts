@@ -10,7 +10,7 @@ const sendMail = buildSendMail({
       pass: process.env.POSTMARK_API_KEY,
     },
   }),
-  defaultFrom: "Steven from Dub <steven@l0l.ink>",
+  defaultFrom: "来自 l0l 当前 Quany <quany@l0l.ink>",
   configPath: "./mailing.config.json",
 });
 
@@ -25,6 +25,6 @@ export const sendMarketingMail = buildSendMail({
       pass: process.env.POSTMARK_MARKETING_API_SECRET,
     },
   }),
-  defaultFrom: "Steven from Dub <steven@ship.l0l.ink>",
+  defaultFrom: "来自 l0l 当前 Quany <quany@l0l.ink>",
   configPath: "./mailing.config.json",
 });

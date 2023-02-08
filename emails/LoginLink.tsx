@@ -19,17 +19,16 @@ export default function LoginLink({ url }: { url: string }): JSX.Element {
       <Head />
       <MjmlBody width={500}>
         <MjmlWrapper cssClass="container">
-          <Header title="Your Login Link" />
+          <Header title="您的登录链接" />
           <MjmlSection cssClass="smooth">
             <MjmlColumn>
               <MjmlText cssClass="paragraph">欢迎来到 l0l!</MjmlText>
               <MjmlText cssClass="paragraph">
-                Please click the magic link below to sign in to your account.
+                请单击下面的魔术链接登录您的帐户。请单击下面的魔术链接登录您的帐户。
               </MjmlText>
-              <ButtonPrimary link={url} uiText="Sign In" />
+              <ButtonPrimary link={url} uiText="登录" />
               <MjmlText cssClass="paragraph">
-                If you're on a mobile device, you can also copy the link below
-                and paste it into the browser of your choice.
+                如果您使用的是移动设备，您还可以复制下面的链接并将其粘贴到您选择的浏览器中。
               </MjmlText>
               <MjmlText cssClass="paragraph">
                 <a
@@ -43,7 +42,7 @@ export default function LoginLink({ url }: { url: string }): JSX.Element {
                 </a>
               </MjmlText>
               <MjmlText cssClass="paragraph">
-                If you did not request this email, you can safely ignore it.
+                如果您没有请求此电子邮件，您可以安全地忽略它。
               </MjmlText>
               <Divider />
             </MjmlColumn>
