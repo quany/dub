@@ -15,11 +15,11 @@ export default async function handler(
         const echostr = req.nextUrl.searchParams.get("echostr");
         // const { echostr } = req.query as { echostr: string };
         console.log('echostr:', echostr)
-        const msg = CryptoJS.AES.decrypt(CryptoJS.enc.Utf8.parse(echostr), '5xIKGoUYc3JwDWjhajNGBnUlomEJDJ45GV6eKobVcPu').toString(CryptoJS.enc.Utf8);
+        const msg = CryptoJS.AES.decrypt(CryptoJS.enc.Utf8.parse(echostr), process.env.WECHAT_WORK_SHORT_AES_KEY).toString(CryptoJS.enc.Utf8);
 
         console.log('decrypt content: ', msg);
 
-        const content = msg.substr(20).replace('ww83dbce36bd5a5696', '');
+        const content = msg.substr(20).replace(process.env.WECHAT_WORK_CORPID, '');
 
         console.log('content:', content);
 
