@@ -14,6 +14,7 @@ export default async function handler(
     }
     // 验证URL有效性
     if (req.method === "GET") {
+        console.log('req', req);
         console.log('req url:', req.url);
         console.log('req nextUrl:', req.nextUrl);
         const echostr = req.nextUrl.searchParams.get("echostr");
