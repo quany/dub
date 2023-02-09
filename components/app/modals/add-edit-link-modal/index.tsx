@@ -301,11 +301,11 @@ function AddEditLinkModal({
                     htmlFor={`url-${randomIdx}`}
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Destination URL
+                    目标网址
                   </label>
                   {urlError && (
                     <p className="text-sm text-red-600" id="key-error">
-                      Invalid url.
+                      无效的网址。
                     </p>
                   )}
                 </div>
@@ -344,7 +344,7 @@ function AddEditLinkModal({
                     htmlFor={`key-${randomIdx}`}
                     className="block text-sm font-medium text-gray-700"
                   >
-                    Short Link
+                    短链接
                   </label>
                   {lockKey ? (
                     <button
@@ -371,7 +371,7 @@ function AddEditLinkModal({
                       ) : (
                         <Random className="h-3 w-3" />
                       )}
-                      <p>{generatingSlug ? "Generating" : "Randomize"}</p>
+                      <p>{generatingSlug ? "生成" : "随机生成"}</p>
                     </button>
                   )}
                 </div>
@@ -416,7 +416,7 @@ function AddEditLinkModal({
                 </div>
                 {keyExistsError && (
                   <p className="mt-2 text-sm text-red-600" id="key-error">
-                    Short link is already in use.
+                    短链接已被使用。
                   </p>
                 )}
               </div>
@@ -432,7 +432,7 @@ function AddEditLinkModal({
               </div>
               <div className="relative flex justify-center">
                 <span className="bg-gray-50 px-2 text-sm text-gray-500">
-                  Optional
+                  选项
                 </span>
               </div>
             </div>
@@ -455,15 +455,12 @@ function AddEditLinkModal({
               } z-10 bg-gray-50 px-4 py-8 transition-all sm:sticky  sm:bottom-0 sm:px-16`}
             >
               {homepageDemo ? (
-                <Tooltip
-                  content="This is a demo link. You can't edit it."
-                  fullWidth
-                >
+                <Tooltip content="这是一个演示链接。你不能编辑它。" fullWidth>
                   <button
                     disabled={true}
                     className=" flex h-10 w-full cursor-not-allowed items-center justify-center rounded-md border border-gray-200 bg-gray-100 text-sm text-gray-400 transition-all focus:outline-none"
                   >
-                    <p className="text-sm">Save changes</p>
+                    <p className="text-sm">保存更改</p>
                   </button>
                 </Tooltip>
               ) : (
@@ -478,9 +475,7 @@ function AddEditLinkModal({
                   {saving ? (
                     <LoadingDots color="#808080" />
                   ) : (
-                    <p className="text-sm">
-                      {props ? "Save changes" : "Add link"}
-                    </p>
+                    <p className="text-sm">{props ? "保存更改" : "添加链接"}</p>
                   )}
                 </button>
               )}
@@ -512,8 +507,8 @@ function AddEditLinkButton({
         <TooltipContent
           title={
             isOwner
-              ? "You have exceeded your usage limit. We're still collecting data on your existing links, but you need to upgrade to add more links."
-              : "The owner of this project has exceeded their usage limit. We're still collecting data on all existing links, but they need to upgrade their plan to add more links."
+              ? "您已超出使用限制。 我们仍在收集有关您现有链接的数据，但您需要升级才能添加更多链接。"
+              : "此项目的所有者已超出其使用限制。 我们仍在收集所有现有链接的数据，但他们需要升级他们的计划以添加更多链接。"
           }
           cta={isOwner && "Upgrade"}
           ctaLink={isOwner && "/settings"}
