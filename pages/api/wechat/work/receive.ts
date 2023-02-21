@@ -10,7 +10,10 @@ export default async function handler(
 ) {
     // 推送消息
     if (req.method === "POST") {
-
+        const data = await fetch(`https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${process.env.WECHAT_WORK_CORPID}&corpsecret=${process.env.WECHAT_WORK_SHORT_CROPSCRET}`);
+        return new Response(JSON.stringify(data), {
+            status: 200,
+        });
     }
     // 验证URL有效性
     if (req.method === "GET") {
