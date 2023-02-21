@@ -13,7 +13,7 @@ export default async function handler(
         const data = await fetch(`https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${process.env.WECHAT_WORK_CORPID}&corpsecret=${process.env.WECHAT_WORK_SHORT_CROPSCRET}`).then((res) => res.json())
             .then((res) => res.data);
         console.log(data);
-        const token = data.token;
+        const token = data.access_token;
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
