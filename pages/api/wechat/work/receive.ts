@@ -11,7 +11,7 @@ export default async function handler(
     // 推送消息
     if (req.method === "POST") {
         const data = await fetch(`https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid=${process.env.WECHAT_WORK_CORPID}&corpsecret=${process.env.WECHAT_WORK_SHORT_CROPSCRET}`).then((res) => res.json())
-            .then((res) => res.data);
+            .then((res) => res);
         console.log(data);
         const token = data.access_token;
         const myHeaders = new Headers();
@@ -43,7 +43,7 @@ export default async function handler(
             body: raw,
             redirect: 'follow'
         }).then((res) => res.json())
-            .then((res) => res.data);
+            .then((res) => res);
 
 
         console.log(response);
