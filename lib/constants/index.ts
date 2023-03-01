@@ -55,11 +55,10 @@ export const FADE_IN_ANIMATION_SETTINGS = {
 
 export const HOME_HOSTNAMES = new Set([
   // comment for better diffs
-  "l0l.ink",
+  "home.l0l.ink",
   "localhost",
   "preview.l0l.ink",
-  "localhost:3000",
-  "quany-bookish-space-zebra-4xjqvq45x3qr6p-3000.preview.app.github.dev"
+  "localhost:3000"
 ]);
 
 export const RESERVED_KEYS = new Set([
