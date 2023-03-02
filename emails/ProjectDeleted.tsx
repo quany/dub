@@ -28,7 +28,7 @@ export default function ProjectDeleted({
           <Header title="Project Deleted" />
           <MjmlSection cssClass="smooth">
             <MjmlColumn>
-              <MjmlText cssClass="paragraph">Hey there!</MjmlText>
+              <MjmlText cssClass="paragraph">嘿！</MjmlText>
               <MjmlText cssClass="paragraph">
                 Just wanted to let you know that your domain{" "}
                 <code>
@@ -50,19 +50,18 @@ export default function ProjectDeleted({
                 deleted from Dub.
               </MjmlText>
               <MjmlText cssClass="paragraph">
-                If you would like to restore the project, you can easily create
-                it again on Dub with the link below.
+                如果您想恢复项目，您可以使用下面的链接在 l0l
+                上轻松地重新创建它。
               </MjmlText>
               <ButtonPrimary
                 link={`https://app.l0l.ink/`}
                 uiText="Create a new project"
               />
               <MjmlText cssClass="paragraph">
-                If you did not want to keep this project on Dub anyway, you can
-                simply ignore this email.
+                如果您不想将此项目保留在 Dub 上，您可以直接忽略此电子邮件。
               </MjmlText>
               <MjmlText cssClass="paragraph" color={grayDark}>
-                Steven from Dub
+                来自l0l的Quany
               </MjmlText>
               <Divider />
             </MjmlColumn>
