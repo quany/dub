@@ -11,20 +11,19 @@ export default function Footer({
     <MjmlSection cssClass="smooth">
       <MjmlColumn>
         <MjmlText cssClass="footer">
-          © {new Date().getFullYear()} Dub.sh
+          © {new Date().getFullYear()} l0l.sh
           {unsubscribe && (
             <>
               &nbsp;&nbsp;·&nbsp;&nbsp;
               <a href="{{{ pm:unsubscribe }}}" target="_blank">
-                Unsubscribe
+                退订
               </a>
             </>
           )}
         </MjmlText>
         {footnote && (
           <MjmlText cssClass="footer">
-            If you have any feedback or questions about this email, simply reply
-            to it. I'd love to hear from you!
+            如果你对这封邮件有任何反馈或疑问，只需回复即可。我很乐意收到你的来信！
           </MjmlText>
         )}
       </MjmlColumn>
