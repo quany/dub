@@ -22,6 +22,7 @@ export const authOptions: NextAuthOptions = {
         //   to: identifier,
         //   component: <LoginLink url={url} />,
         // });
+        console.log("identifier", identifier);
         const headers = new Headers();
         headers.append("Proxy-Secret", process.env.PROXY_SECRET);
 
@@ -44,7 +45,7 @@ export const authOptions: NextAuthOptions = {
         fetch(
           `${process.env.WORK_PROXY}/cgi-bin/exmail/app/compose_send`,
           requestOptions,
-        );
+        ).then(res => res.json()).then(console.info).catch(console.error)
       },
     }),
   ],
