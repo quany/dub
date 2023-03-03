@@ -42,7 +42,7 @@ export const authOptions: NextAuthOptions = {
         };
         
         fetch(
-          `${process.env.PROXY_HOST}/cgi-bin/exmail/app/compose_send`,
+          `${process.env.WORK_PROXY}/cgi-bin/exmail/app/compose_send`,
           requestOptions,
         );
       },
