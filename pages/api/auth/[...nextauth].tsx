@@ -1,4 +1,8 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
+
+import {
+  render,
+} from "mjml-react";
 import sendMail, { sendMarketingMail } from "emails";
 import LoginLink from "emails/LoginLink";
 import WelcomeEmail from "emails/WelcomeEmail";
@@ -13,11 +17,34 @@ export const authOptions: NextAuthOptions = {
   providers: [
     EmailProvider({
       sendVerificationRequest({ identifier, url }) {
-        sendMail({
+        // sendMail({
+        //   subject: "您的 l0l.ink 登录链接",
+        //   to: identifier,
+        //   component: <LoginLink url={url} />,
+        // });
+        const headers = new Headers();
+        headers.append("Proxy-Secret", process.env.PROXY_SECRET);
+
+         const {html, errors} =render(<LoginLink url={url} />)
+         console.error(errors)
+        const body = JSON.stringify({
+          to: {
+            emails: [identifier],
+          },
           subject: "您的 l0l.ink 登录链接",
-          to: identifier,
-          component: <LoginLink url={url} />,
+          content: html,
         });
+
+        const requestOptions = {
+          method: "POST",
+          headers,
+          body,
+        };
+        
+        fetch(
+          `${process.env.PROXY_HOST}/cgi-bin/exmail/app/compose_send`,
+          requestOptions,
+        );
       },
     }),
   ],
