@@ -1,8 +1,6 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
-import {
-  render,
-} from "mjml-react";
+import { render } from "mjml-react";
 import sendMail, { sendMarketingMail } from "emails";
 import LoginLink from "emails/LoginLink";
 import WelcomeEmail from "emails/WelcomeEmail";
@@ -26,8 +24,9 @@ export const authOptions: NextAuthOptions = {
         const headers = new Headers();
         headers.append("Proxy-Secret", process.env.PROXY_SECRET);
 
-         const {html, errors} =render(<LoginLink url={url} />)
-         console.error(errors)
+        const { html, errors } = render(<LoginLink url={url} />);
+        console.log("html", html);
+        console.error(errors);
         const body = JSON.stringify({
           to: {
             emails: [identifier],
@@ -41,11 +40,14 @@ export const authOptions: NextAuthOptions = {
           headers,
           body,
         };
-        
+
         fetch(
           `${process.env.WORK_PROXY}/cgi-bin/exmail/app/compose_send`,
           requestOptions,
-        ).then(res => res.json()).then(console.info).catch(console.error)
+        )
+          .then((res) => res.json())
+          .then(console.info)
+          .catch(console.error);
       },
     }),
   ],
