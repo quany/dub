@@ -50,9 +50,9 @@ export default function Login() {
                   setSignInClicked(false);
                   if (res?.ok && !res?.error) {
                     setEmail("");
-                    setButtonText("Email sent - check your inbox!");
+                    setButtonText("电子邮件已发送 - 检查您的收件箱！");
                   } else {
-                    setButtonText("Error sending email - try again?");
+                    setButtonText("发送电子邮件时出错 - 再试一次？");
                   }
                 });
               } else {

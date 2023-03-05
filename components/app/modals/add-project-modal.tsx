@@ -127,7 +127,7 @@ function AddProjectModalHelper({
                   setDomainError(domainErrorResponse);
                 }
               } else {
-                setDomainError("Something went wrong.");
+                setDomainError("出了些问题。");
               }
             });
           }}
@@ -242,14 +242,14 @@ function AddProjectModalHelper({
             {domainError &&
               (domainError === "Domain is already in use." ? (
                 <p className="mt-2 text-sm text-red-600" id="domain-error">
-                  Domain is already in use.{" "}
+                  域名早已被使用.{" "}
                   <a
                     className="underline"
-                    href="mailto:steven@l0l.ink?subject=My Domain Is Already In Use"
+                    href="mailto:quany@l0l.ink?subject=My Domain Is Already In Use"
                   >
-                    Contact us
+                    联系我们
                   </a>{" "}
-                  if you'd like to use this domain for your project.
+                  如果您想将此域用于您的项目。
                 </p>
               ) : (
                 <p className="mt-2 text-sm text-red-600" id="domain-error">

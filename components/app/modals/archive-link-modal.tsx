@@ -58,8 +58,8 @@ function ArchiveLinkModal({
           </h3>
           <p className="text-sm text-gray-500">
             {archived
-              ? "Archived links will still work - they just won't show up on your main dashboard."
-              : "By unarchiving this link, it will show up on your main dashboard again."}
+              ? "存档链接仍然有效 - 它们只是不会显示在您的主仪表板上。"
+              : "通过取消存档此链接，它将再次显示在您的主仪表板上。"}
           </p>
         </div>
 
@@ -102,7 +102,7 @@ function ArchiveLinkModal({
             {archiving ? (
               <LoadingDots color="#808080" />
             ) : (
-              <p>Confirm {archived ? "archive" : "unarchive"}</p>
+              <p>确认 {archived ? "存档" : "不存档"}</p>
             )}
           </button>
         </div>

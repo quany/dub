@@ -108,9 +108,8 @@ function AddEditLinkModal({
     if (password) {
       setData((prev) => ({
         ...prev,
-        title: "Password Required",
-        description:
-          "This link is password protected. Please enter the password to view it.",
+        title: "要求输入密码",
+        description: "此链接受密码保护。 请输入密码查看。",
         image: "/_static/password-protected.png",
       }));
       return;
@@ -288,7 +287,7 @@ function AddEditLinkModal({
                 } else if (res.status === 400) {
                   setUrlError(true);
                 } else {
-                  alert("Something went wrong");
+                  alert("出了些问题");
                 }
               });
             }}
@@ -352,7 +351,7 @@ function AddEditLinkModal({
                       type="button"
                       onClick={() => {
                         window.confirm(
-                          "Editing an existing short link will result in broken links and reset its analytics. Are you sure you want to continue?",
+                          "编辑现有的短链接将导致链接断开并重置其分析。 你确定你要继续吗？",
                         ) && setLockKey(false);
                       }}
                     >

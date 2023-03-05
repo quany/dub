@@ -50,7 +50,7 @@ export default function PasswordSection({
             type={showPassword ? "text" : "password"}
             className="block w-full rounded-md border-gray-300 text-sm text-gray-900 placeholder-gray-300 focus:border-gray-500 focus:outline-none focus:ring-gray-500"
             value={password || ""}
-            placeholder="Enter password"
+            placeholder="请输入密码"
             onChange={(e) => {
               setData({ ...data, password: e.target.value });
             }}
