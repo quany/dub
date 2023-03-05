@@ -85,7 +85,7 @@ export const RESERVED_KEYS = new Set([
   "demo",
 ]);
 export const DEFAULT_REDIRECTS = {
-  home: "https://l0l.ink",
+  home: "https://home.l0l.ink",
   signin: "https://app.l0l.ink/login",
   login: "https://app.l0l.ink/login",
   register: "https://app.l0l.ink/register",
