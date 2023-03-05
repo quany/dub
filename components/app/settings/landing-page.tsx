@@ -56,7 +56,7 @@ export default function LandingPage() {
         <h2 className="text-xl font-medium">着陆页</h2>
         <div className="flex items-center space-x-1">
           <p className="text-sm text-gray-500">
-          配置页面以在访问者登陆时重定向访问者{" "}
+            配置页面以在访问者登陆时重定向访问者{" "}
             <a
               href={`https://${domain}`}
               target="_blank"
@@ -98,12 +98,12 @@ export default function LandingPage() {
           <Tooltip
             content={
               <TooltipContent
-                title={`You can't configure a custom landing page on a free plan. ${
+                title={`您无法在免费计划中配置自定义登录页面. ${
                   isOwner
-                    ? "Upgrade to a Pro plan to proceed."
-                    : "Ask your project owner to upgrade to a Pro plan."
+                    ? "升级到 专业版 以继续。"
+                    : "请您的项目所有者升级到 专业版。"
                 }`}
-                cta={isOwner && "Upgrade to Pro"}
+                cta={isOwner && "升级专业版"}
                 ctaLink={isOwner && "/settings"}
               />
             }
@@ -138,7 +138,7 @@ export default function LandingPage() {
                     ? "Upgrade to a Pro plan to proceed."
                     : "Ask your project owner to upgrade to a Pro plan."
                 }`}
-                cta={isOwner && "Upgrade to Pro"}
+                cta={isOwner && "升级专业版"}
                 ctaLink={isOwner && "/settings"}
               />
             }

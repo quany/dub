@@ -109,8 +109,8 @@ export default function LinkCard({ props }: { props: LinkProps }) {
                 <Tooltip
                   content={
                     <TooltipContent
-                      title="Your branded links won't work until you verify your domain."
-                      cta="Verify your domain"
+                      title="在您验证域之前，您的品牌链接将不起作用。"
+                      cta="验证您的域名"
                       ctaLink={`/${slug}/settings`}
                     />
                   }

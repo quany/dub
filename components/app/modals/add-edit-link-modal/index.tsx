@@ -509,7 +509,7 @@ function AddEditLinkButton({
               ? "您已超出使用限制。 我们仍在收集有关您现有链接的数据，但您需要升级才能添加更多链接。"
               : "此项目的所有者已超出其使用限制。 我们仍在收集所有现有链接的数据，但他们需要升级他们的计划以添加更多链接。"
           }
-          cta={isOwner && "Upgrade"}
+          cta={isOwner && "升级"}
           ctaLink={isOwner && "/settings"}
         />
       }

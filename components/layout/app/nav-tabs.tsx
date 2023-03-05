@@ -11,14 +11,14 @@ const TabsHelper = (router: NextRouter): { name: string; href: string }[] => {
     return [{ name: "← All Links", href: `/${slug || "links"}` }];
   } else if (slug) {
     return [
-      { name: "Links", href: `/${slug}` },
-      { name: "Settings", href: `/${slug}/settings` },
+      { name: "链接", href: `/${slug}` },
+      { name: "设置", href: `/${slug}/settings` },
     ];
   }
   return [
-    { name: "Projects", href: `/` },
-    { name: "Dub.sh Links", href: `/links` },
-    { name: "Settings", href: `/settings` },
+    { name: "项目", href: `/` },
+    { name: "l0l.ink 链接", href: `/links` },
+    { name: "设置", href: `/settings` },
   ];
 };
 
