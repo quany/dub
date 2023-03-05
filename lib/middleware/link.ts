@@ -19,13 +19,14 @@ export default async function LinkMiddleware(
     return NextResponse.next();
   }
 
+  // todo:l0l.ink,${domain}
   const response = await redis.get<{
     url: string;
     password?: boolean;
     proxy?: boolean;
     ios?: string;
     android?: string;
-  }>(`${domain}:${key}`);
+  }>(`l0l.ink:${key}`);
   const { url: target, password, proxy, ios, android } = response || {};
 
   if (target) {
