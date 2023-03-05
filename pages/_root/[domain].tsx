@@ -58,28 +58,27 @@ export default function Placeholder({ domain }: { domain: string }) {
               className="font-display text-4xl font-bold text-gray-800 transition-colors sm:text-5xl"
               variants={STAGGER_CHILD_VARIANTS}
             >
-              Welcome to Dub
+              欢迎来到l0l
             </motion.h1>
             <motion.p
               className="max-w-xl text-gray-600 transition-colors sm:text-lg"
               variants={STAGGER_CHILD_VARIANTS}
             >
-              <InlineSnippet>{domain}</InlineSnippet> is a custom domain on{" "}
+              <InlineSnippet>{domain}</InlineSnippet> 是一个自定义域{" "}
               <a
                 className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text font-semibold text-transparent decoration-rose-600 hover:underline"
                 href={`https://l0l.ink?utm_source=${domain}&utm_medium=referral&utm_campaign=custom-domain`}
               >
-                Dub
+                l0l
               </a>{" "}
-              - a link management tool for modern marketing teams to create,
-              share, and track short links.
+              -现代营销团队创建、共享和跟踪短链接的链接管理工具。
             </motion.p>
             <motion.a
               variants={STAGGER_CHILD_VARIANTS}
               href={`https://l0l.ink?utm_source=${domain}&utm_medium=referral&utm_campaign=custom-domain`}
               className="rounded-full bg-gray-800 px-10 py-2 font-medium text-white transition-colors hover:bg-black"
             >
-              Create Your Free Branded Link
+              创建您的免费品牌链接
             </motion.a>
           </motion.div>
         )}

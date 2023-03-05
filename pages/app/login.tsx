@@ -10,7 +10,7 @@ export default function Login() {
   const [signInClicked, setSignInClicked] = useState(false);
   const [noSuchAccount, setNoSuchAccount] = useState(false);
   const [email, setEmail] = useState("");
-  const [buttonText, setButtonText] = useState("Send magic link");
+  const [buttonText, setButtonText] = useState("发送登录链接");
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-50">
