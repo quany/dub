@@ -69,7 +69,7 @@ export default function HomeLayout({
           <Twitter className="h-6 w-6 text-gray-600" />
         </a>
         <Link href="/">
-          <span className="sr-only">Dub.sh Logo</span>
+          <span className="sr-only">l0l.ink Logo</span>
           <Logo className="h-7 w-7 text-gray-600" />
         </Link>
         <a
