@@ -25,8 +25,7 @@ export function FeedbackEmail() {
   return (
     <FeedbackEmailChild
       email="quany@l0l.ink"
-      feedback="This is a 
-test feedback email"
+      feedback="这是一个测试邮件"
     />
   );
 }
