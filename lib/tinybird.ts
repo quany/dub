@@ -18,7 +18,7 @@ export async function recordClick(
 
   return await Promise.allSettled([
     fetch(
-      "https://api.us-east.tinybird.co/v0/events?name=click_events&wait=true",
+      "https://api.tinybird.co/v0/events?name=click_events&wait=true",
       {
         method: "POST",
         body: JSON.stringify({

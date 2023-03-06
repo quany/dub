@@ -84,7 +84,7 @@ const pricingItems = [
       { text: "SSO/SAML" },
     ],
     cta: "联系我们",
-    ctaLink: "mailto:steven@l0l.ink?subject=Interested%20in%20Dub%20Enterprise",
+    ctaLink: "mailto:quany@l0l.ink?subject=Interested%20in%20Dub%20Enterprise",
   },
 ];
 

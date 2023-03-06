@@ -11,9 +11,7 @@ const Hero = () => {
         className="mx-auto flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full bg-blue-100 px-7 py-2 transition-all hover:bg-blue-200"
       >
         <Twitter className="h-5 w-5 text-[#1d9bf0]" />
-        <p className="text-sm font-semibold text-[#1d9bf0]">
-          Introducing Dub.sh
-        </p>
+        <p className="text-sm font-semibold text-[#1d9bf0]">介绍 l0l.ink</p>
       </a>
 
       <h1 className="mt-5 font-display text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl sm:leading-[1.15]">

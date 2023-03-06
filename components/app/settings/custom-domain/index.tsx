@@ -73,7 +73,7 @@ export default function CustomDomain() {
                     : "bg-white hover:border-black hover:text-black"
                 } h-9 w-24 rounded-md border border-solid border-gray-200 text-sm text-gray-500 transition-all duration-150 ease-in-out focus:outline-none`}
               >
-                {isValidating ? <LoadingDots /> : "Refresh"}
+                {isValidating ? <LoadingDots /> : "刷新"}
               </button>
             ) : (
               <div className="h-9 w-24 animate-pulse rounded-md bg-gray-200" />
